@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="getter.js" defer></script>
+</head>
+
+<body style="text-align: center">
+    <h1>
+        Welcome to my weather app!
+    </h1>
+    <p>
+        Enter a zip code and a <a href="https://www.nationsonline.org/oneworld/country_code_list.htm"
+            target="_blank">country's ISO code</a> to see the current weather there.
+    </p>
+    <div>
+        <input type="text" name="zip" id="zip" placeholder="Zip code">
+        <input type="text" name="country_code" id="country_code" placeholder="ISO country code">
+        <button onclick="getData()">
+            submit
+        </button>
+        <select name="units" id="units" onchange="updateUnits()">
+            <option value="F">°F</option>
+            <option value="C">°C</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <table border="1" style="border:1px solid black;margin-left:auto;margin-right:auto;">
+            <tr>
+                <td>
+                    Area
+                </td>
+                <td id='area'>
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Country
+                </td>
+                <td id='country'>
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Temperature
+                </td>
+                <td id='temp'>
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Feels like
+                </td>
+                <td id='feels'>
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Max temperature
+                </td>
+                <td id='max'>
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Min temperature
+                </td>
+                <td id='min'>
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Humidity
+                </td>
+                <td id='hum'>
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pressure
+                </td>
+                <td id='pres'>
+                    None
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
