@@ -1,0 +1,14 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "basic weather website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "author": "Rafael Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
